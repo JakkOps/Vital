@@ -1,0 +1,29 @@
+# .gitignore da raiz do monorepo.
+# Cobre lixo de SO/IDE e segredos. As pastas backend/ e frontend/ trazem
+# o proprio .gitignore das ferramentas (target/, node_modules/, dist/ etc.).
+
+# Segredos e variaveis de ambiente — nunca versionar (repo publico)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs e editores
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Rede de seguranca (as pastas filhas ja ignoram, isto e reforco)
+node_modules/
+target/
+dist/
